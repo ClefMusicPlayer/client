@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body, html, * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-image: url('/background.png');
+  background-blend-mode: darken;
+  background-repeat: repeat;
+  background-color: var(--level0);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: rgb(174, 202, 55);
+  --secondary: rgb(5, 22, 53);
+  --level0: rgb(20, 20, 20);
+  --level1: rgba(25, 25, 25, 0.6);
+  --level2: rgb(60, 60, 60);
+  --text: rgb(248, 236, 203);
+}

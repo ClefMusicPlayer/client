@@ -1,0 +1,15 @@
+.search {
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	padding: 15px 15px;
+	border-radius: 5px;
+	color: var(--text);
+}
+
+.search:focus {
+	outline: none;
+}
+
+.search::placeholder {
+	color: var(--text);
+}
