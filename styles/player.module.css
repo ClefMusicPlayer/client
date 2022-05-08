@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  background-color: var(--level1);
+}
+
+.trackThumb {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.playerMain {
+  padding: 0 2vw;
+  background-color: rgba(25, 25, 25, 0.6);
+  border-radius: 15px;
+	margin: 0 1.5rem;
+}
+
+.actionMore {
+	width: fit-content;
+	margin-left: auto;
+	padding: 8px 25px;
+	border-radius: 15px;
+	font-size: 2rem;
+	color: var(--primary);
+	cursor: pointer;
+	position: relative;
+}
+
+.actionsList {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 85%;
+	left: -100px;
+	background-color: var(--level1);
+	padding: 2vw;
+	width: max-content;
+	border-radius: 15px;
+	border: 2px solid var(--level2);
+}
+
+.volumeInput {
+	position: absolute;
+	top: -6px;
+	right: 60px;
+	padding: 10px;
+	background-color: var(--level2);
+	border-radius: 15px;
+	border: 1px solid var(--primary);
+}

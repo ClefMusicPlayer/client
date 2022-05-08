@@ -1,6 +1,7 @@
 self.addEventListener('fetch', function (event) {
 	if (event.request.destination !== 'images') return;
 	if (!('caches' in window)) return;
+	console.log('[SW] Caching Image!')
   event.respondWith(
     caches.open('images').then(async function(cache) {
       const response = await cache.match(event.request);

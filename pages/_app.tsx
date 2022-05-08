@@ -1,7 +1,8 @@
-import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import { useEffect } from 'react'
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import { useEffect } from "react";
+import { MantineProvider } from "@mantine/core";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -17,13 +18,22 @@ function MyApp({ Component, pageProps }: AppProps) {
          );
        });
     }
-  })
-  return <>
-    <Head>
-      <link rel="manifest" href="/manifest.json" />
-    </Head>
-    <Component {...pageProps} />
-  </>
+  });
+
+  return (
+    <>
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+      <MantineProvider
+        theme={{ colorScheme: "dark" }}
+        withGlobalStyles
+        withNormalizeCSS
+      >
+          <Component {...pageProps} />
+      </MantineProvider>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
